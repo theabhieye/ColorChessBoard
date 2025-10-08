@@ -37,26 +37,45 @@ class CalculationService:  CalculationServiceProtocol{
                 }
             }
         }
-        
+    
         func fillCamel(at coordinate: (Int, Int)) {
             let (x, y) = coordinate
             var i = x, j = y
-            while i >= 0  && j >= 0 {
+
+            while i >= 0 && j >= 0 {
                 gride[i][j] = getColorForCamel(at: (i, j))
                 i -= 1
                 j -= 1
             }
-            
+
             i = x
             j = y
-            while i < 8  && j < 8 {
+
+            while i < 8 && j < 8 {
                 gride[i][j] = getColorForCamel(at: (i, j))
                 i += 1
                 j += 1
             }
-            
+
+            i = x
+            j = y
+
+            while i >= 0 && j < 8 {
+                gride[i][j] = getColorForCamel(at: (i, j))
+                i -= 1
+                j += 1
+            }
+
+            i = x
+            j = y
+
+            while i < 8 && j >= 0 {
+                gride[i][j] = getColorForCamel(at: (i, j))
+                i += 1
+                j -= 1
+            }
         }
-        
+
         func getColorForCamel(at coordinate: (Int, Int)) -> ColorCode {
             let (x, y) = coordinate
             return gride[x][y] == ColorCode.yellow ?  ColorCode.red : ColorCode.blue

@@ -6,19 +6,11 @@ A simple SwiftUI project that displays an 8x8 color-based grid (similar to a che
 
 ## 📷 Preview
 
-### 🎞️ Screen Recording
-
-https://github.com/your-username/ColorChessBoard/assets/screenshots/Simulator%20Screen%20Recording%20-%20iPhone%2016e%20-%202025-10-08%20at%2022.11.55.mp4
-
-> *(GitHub doesn’t natively embed `.mp4` playback from repo files, so it's best to upload the video to the "Releases" or as a GitHub Issue comment to get an embeddable URL — or upload to YouTube and link it.)*
-
----
-
 ### 🖼 Screenshots
 
-<img src="screenshots/Simulator%20Screenshot%20-%20iPhone%2016e%20-%202025-10-08%20at%2019.45.53.png" width="300" />
-<img src="screenshots/Simulator%20Screenshot%20-%20iPhone%2016e%20-%202025-10-08%20at%2022.12.03.png" width="300" />
-<img src="screenshots/Simulator%20Screenshot%20-%20iPhone%2016e%20-%202025-10-08%20at%2022.12.09.png" width="300" />
+<img src="./screenshots/ss-1.png" width="300" />
+<img src="./screenshots/ss-2.png" width="300" />
+<img src="./screenshots/ss-3.png" width="300" />
 
 ---
 
@@ -39,6 +31,7 @@ https://github.com/your-username/ColorChessBoard/assets/screenshots/Simulator%20
 
 
 ## 📦 Structure
+```bash
 .
 ├── Demo-1
 │   ├── AppDelegate.swift
@@ -87,7 +80,15 @@ https://github.com/your-username/ColorChessBoard/assets/screenshots/Simulator%20
 │   ├── Demo_1UITests.swift
 │   └── Demo_1UITestsLaunchTests.swift
 ├── readme.md
+└── screenshots
+    ├── ss-1.png
+    ├── ss-2.png
+    ├── ss-3.png
+    └── video.mp4
 
+25 directories, 28 files
+
+```
 
 ## 🤖 About this README
 
